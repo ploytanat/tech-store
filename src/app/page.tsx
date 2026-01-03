@@ -1,5 +1,4 @@
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
+
 import ProductCard from "@/components/ProductCard";
 import { products } from "../data/mockProducts";
 
@@ -10,10 +9,12 @@ import BrandCard from "@/components/BrandCard";
 import { brands } from "@/data/mockBrands";
 
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+    <Navbar />
       <div className="container px-17 mx-auto ">
         <div className="relative">
           <span className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10  bg-zinc-700 text-white flex items-center justify-center rounded-e-full shadow-lg cursor-pointer">
@@ -177,7 +178,7 @@ export default function Home() {
 
 
       </div>
-      <Footer/>
+   <Footer />
     </div>
   );
 }
